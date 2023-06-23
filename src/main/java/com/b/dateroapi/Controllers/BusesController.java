@@ -81,4 +81,9 @@ public class BusesController {
     public List<BusesModel> BusesxEmpD(@PathVariable("emp") Long emp){
         return busesService.ListarBusesxED(emp);
     }
+
+    @GetMapping("/saludo")
+    public String Saludos(){
+        return "Hola mundo";
+    }
 }
